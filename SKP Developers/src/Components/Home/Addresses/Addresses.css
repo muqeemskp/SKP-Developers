@@ -1,0 +1,180 @@
+.addresscontainer {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(69,34,22,0.7),rgba(69,34,22,0.7)), url(../../../assets/fort.JPG);
+    background-size: cover;
+    background-position: center;
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.left {
+    flex-basis: 40%;
+    padding-left: 40px;
+    padding-top: 40px;
+}
+
+.left h1 {
+    font-size: 70px;
+    margin-bottom: 40px;
+    line-height: 1;
+    color: white;
+}
+
+.right {
+    flex-basis: 40%;
+    display: flex;
+    padding-left: 200px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-address {
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+}
+
+.site-name-address {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(253, 226, 183);
+    margin-bottom: 30px;
+}
+
+.address {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.adresicon {
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.address-details {
+    color: white;
+}
+
+.address-details h3 {
+    font-size: 22px;
+}
+
+.address-details p {
+    font-size: 18px;
+    margin: 0;
+    color: white;
+}
+
+.address-details p a:hover {
+    color: var(--accent-color);
+}
+
+
+@media (max-width: 1200px) {
+    .addresscontainer {
+        padding: 50px;
+    }
+
+    .right {
+        padding-left: 100px;
+    }
+}
+
+@media (max-width: 992px) {
+    .addresscontainer {
+        flex-direction: column;
+        padding: 30px;
+        height: auto;
+        text-align: center;
+    }
+
+    .left, .right {
+        flex-basis: 100%;
+        padding: 20px;
+        max-width: 100%;
+    }
+
+    .right {
+        padding-left: 0;
+    }
+
+    .left {
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    .left h1 {
+        font-size: 48px;
+    }
+}
+
+@media (max-width: 768px) {
+    .addresscontainer {
+        padding: 20px;
+    }
+
+    .left h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+    .right {
+        gap: 10px;
+    }
+
+    .adresicon {
+        width: 80px;
+        height: 80px;
+        margin-top: 0;
+    }
+
+    .address-details h3 {
+        font-size: 18px;
+    }
+
+    .address-details p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .addresscontainer {
+        padding: 15px;
+    }
+
+    .left h1 {
+        font-size: 28px;
+    }
+
+    .logo-address {
+        height: 40px;
+        width: 40px;
+    }
+
+    .site-name-address {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .adresicon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .address-details h3 {
+        font-size: 16px;
+    }
+
+    .address-details p {
+        font-size: 14px;
+    }
+}

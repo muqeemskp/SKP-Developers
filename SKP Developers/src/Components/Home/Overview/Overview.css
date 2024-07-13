@@ -1,0 +1,114 @@
+.area {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: #fff;
+  /* border-bottom: 5px solid #452216; */
+  /* box-shadow: inset 0 -20px 40px -20px rgba(69,34,22,1); */
+}
+
+.context {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+  color: #452216;
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+
+.context h1 {
+  font-size: 4rem;
+  font-size: 4vw; 
+}
+
+.context p {
+  font-size: 1.3rem; 
+  font-size: 1.3vw; 
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-bottom: 80px;
+}
+
+.btn {
+  background-color: #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2rem; 
+  font-size: 1.2vw; 
+  border-radius: 4px;
+}
+
+
+@media (max-width: 1200px) {
+  .context h1 {
+      font-size: 3.5rem; 
+  }
+  .context p {
+      font-size: 1.2rem; 
+  }
+  .btn {
+      font-size: 1rem; 
+  }
+}
+
+@media (max-width: 992px) {
+  .context h1 {
+      font-size: 3rem; 
+  }
+  .context p {
+      font-size: 1.1rem; 
+  }
+  .btn {
+      font-size: 0.9rem; 
+  }
+}
+
+@media (max-width: 768px) {
+  .context h1 {
+      font-size: 2.5rem; 
+  }
+  .context p {
+      font-size: 1rem;
+      padding: 0 10px; 
+  }
+  .btn {
+      font-size: 0.8rem; 
+  }
+}
+
+@media (max-width: 576px) {
+  .context h1 {
+      font-size: 2rem;
+  }
+  .context p {
+      font-size: 0.9rem;
+      margin: 10px auto;
+      padding: 0 5px; 
+  }
+  .btn {
+      font-size: 0.6rem;
+      padding: 6px 12px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .context h1 {
+      font-size: 1.5rem; 
+  }
+  .context p {
+      font-size: 0.8rem;
+      margin: 10px auto; 
+      padding: 0 5px; 
+  }
+  .btn {
+      font-size: 0.4rem;
+      padding: 5px 10px; 
+  }
+}

@@ -1,0 +1,264 @@
+
+.CEOcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 120px;
+    background: white;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.left {
+    flex-basis: 40%;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.CEOimg {
+    width: 120%;
+    border-radius: 10px;
+    margin-right: 150px;
+}
+
+.right {
+    flex-basis: 45%;
+    color: #452216;
+    text-align: justify;
+}
+
+.playicon {
+    width: 100px;
+    position: absolute;
+    bottom: 30%; 
+    left: 50%;
+    transform: translate(-50%, 50%);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.maincontainer {
+    width: 100%;
+    height: auto;
+    background: white;
+}
+
+.right h2 {
+    font-size: 60px;
+}
+
+.right p {
+    font-size: 20px;
+    margin-top: 20px;
+    width: 50ch;
+}
+
+.right h3 {
+    font-size: 18px;
+    margin-top: 30px;
+}
+
+.videoplayer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoplayer video {
+    width: 90%;
+    max-width: 900px;
+    height: auto;
+    border: 4px solid #fff;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media (max-width: 1200px) {
+    .CEOcontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        text-align: left; 
+    }
+
+    .left {
+        flex-basis: auto;
+        margin-bottom: 20px; 
+    }
+
+    .CEOimg {
+        width: 100%; 
+        margin-right: 0; 
+    }
+
+    .right {
+        flex-basis: 100%;
+        text-align: left; 
+        width: 100%;
+    }
+
+    .right p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .playicon {
+        width: 90px;
+        bottom: 25%;
+    }
+}
+
+@media (max-width: 992px) {
+    .CEOcontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px;
+        text-align: left;
+    }
+
+    .left {
+        flex-basis: auto;
+        margin-bottom: 15px;
+    }
+
+    .CEOimg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right {
+        flex-basis: 100%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .right p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .playicon {
+        width: 80px;
+        bottom: 22%;
+    }
+}
+
+@media (max-width: 768px) {
+    .CEOcontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+        text-align: left;
+    }
+
+    .left {
+        flex-basis: auto;
+        margin-bottom: 10px;
+    }
+
+    .CEOimg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right {
+        flex-basis: 100%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .right p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .playicon {
+        width: 70px; 
+        bottom: 18%; 
+    }
+}
+
+@media (max-width: 576px) {
+    .CEOcontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .left {
+        flex-basis: auto;
+        margin-bottom: 5px;
+    }
+
+    .CEOimg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right {
+        flex-basis: 100%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .right p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .playicon {
+        width: 60px;
+        bottom: 15%; 
+    }
+}
+
+@media (max-width: 480px) {
+    .CEOcontainer {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: left;
+    }
+
+    .left {
+        flex-basis: auto;
+        margin-bottom: 5px;
+    }
+
+    .CEOimg {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .right {
+        flex-basis: 100%;
+        text-align: left;
+        width: 100%;
+    }
+
+    .right p {
+        width: 100%;
+        margin: 0;
+    }
+
+    .playicon {
+        width: 50px;
+        bottom: 10%; 
+    }
+}
+
+.bold-text {
+    font-weight: 800;
+}

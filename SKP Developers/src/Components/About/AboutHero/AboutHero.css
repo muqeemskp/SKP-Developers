@@ -1,0 +1,42 @@
+.abouthero {
+    width: 100%;
+    /* will use my pic as the bg */
+    background: linear-gradient(rgba(22, 57, 69, 0.7),rgba(69,34,22,0.7)), url(../../../assets/aboutherobg.jpg);
+    position: relative;
+    height: 120vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(253,226,183);
+    text-align: center;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+.abouthero-text {
+    text-align: center;
+    max-width: 800px;
+    outline: black;
+    padding: 20px; 
+}
+
+.abouthero-text h1 {
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.abouttext {
+    font-size: 80px;
+    font-weight: bold;
+    color: white;
+    background-clip: text;
+    mix-blend-mode: overlay;
+    -webkit-background-clip: text;
+    background-image: inherit;
+    text-shadow: 2px 2px 4px rgba(255, 225, 225, 1);
+    animation: popIn .5s ease-in;
+}
+.abouthero-text p{
+    color: white;
+}
